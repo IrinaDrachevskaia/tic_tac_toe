@@ -52,6 +52,7 @@ while start:
             if ar[row][col] == "":
                 ar[row][col] = sign
                 if num == 10:
+                    update_table(ar)
                     print("Game over. Draw!")
                     go_on = False
                     start = to_continue()
